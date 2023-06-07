@@ -1,0 +1,7 @@
+---
+- hosts: drs
+  become: true
+  become_user: root
+  tasks:
+          - name: Rebooting the alle vServers
+            reboot:
